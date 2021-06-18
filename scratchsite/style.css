@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+figcaption {
+  border: 5px solid black ;
+}
+
+/* CSS for Header */
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #0000C2;
+    padding: 20px 10px;
+    height: 256px;
+  }
+  
+  /* Style the header links */
+  .header a {
+
+    color: black;
+   
+  
+    padding: 12px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .headerLogo {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 220px;
+
+}
+
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #F1F100;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: #F1F100;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+  
+    top: 30px;
+    
+    float: right;
+    text-align: right;
+  }
+
+  
+  .header-left {
+      float: left;
+      top: 30px
+  }
+  .full-width-image {
+    width: 100%;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0000C2;
+    color: white;
+    
+  }
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+  float: left;
+  margin:15px;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+  
+}
+
+/* Twitter */
+.fa-instagram{
+  background: #55ACEE;
+  color: white;
+}
+.footer a {
+  float:right;
+  text-align: center;
+  padding: 8px;
+}
+.footer a:hover {
+  color: #F1F100;
+}
+ 
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      
+    }
+    .header-right {
+      float: none;
+      text-align: left;
+    }
+    .header-left {
+      float: none;
+      text-align: right;
+    }
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    max-width: 100%;
+  }
+  .team-img {
+    display: block;
+    margin: auto;
+  }
+  .footer {
+    padding-top: 1em;
+    background-color: dodgerblue;
+    height: 100px;
+  }
